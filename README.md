@@ -1,1 +1,1 @@
-# MySoftware-For-Ubuntu
+# MyHexo Web Config
