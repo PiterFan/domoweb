@@ -80,5 +80,5 @@ theme: indigo
 deploy:
   type: git
   repository: https://github.com/PiterFan/domoweb.git
-  branch: gh-pages
+  branch: master
   message: 网站更新于{{ now('YYYY-MM-DD HH:mm:ss') }}
