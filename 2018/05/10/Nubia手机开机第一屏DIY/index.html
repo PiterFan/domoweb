@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>中兴Nubia手机开机第一屏DIY | 多磨峡谷 | 沧海横流，经天纬地英雄业；风云际会，壮曲悲歌志士情！</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="开机第一屏破解,Nubia开机第一屏,玩机">
+    <meta name="description" content="小试牛刀你想不想拥有一部高度个性化的手机呢？作者就是一个非常喜欢捣鼓的人，最近买了一部Nubia布拉格手机，外观挺漂亮，但是一开机，那开机动画快要把人眼睛都闪瞎了有木有？！还好没像格力那样搞个人脸上去，再一看，nubia的口号就是“个性，是一种生活方式！”，那开机动画是挺个性的。 一看刷机包，那结构，很明显splash.img就应该是开机第一屏，就拿它开刀了，上网搜索，真有修改开机第一屏的相关信息">
+<meta name="keywords" content="开机第一屏破解,Nubia开机第一屏,玩机">
+<meta property="og:type" content="article">
+<meta property="og:title" content="中兴Nubia手机开机第一屏DIY">
+<meta property="og:url" content="https://blog.imcuiya.com/2018/05/10/Nubia手机开机第一屏DIY/index.html">
+<meta property="og:site_name" content="多磨峡谷">
+<meta property="og:description" content="小试牛刀你想不想拥有一部高度个性化的手机呢？作者就是一个非常喜欢捣鼓的人，最近买了一部Nubia布拉格手机，外观挺漂亮，但是一开机，那开机动画快要把人眼睛都闪瞎了有木有？！还好没像格力那样搞个人脸上去，再一看，nubia的口号就是“个性，是一种生活方式！”，那开机动画是挺个性的。 一看刷机包，那结构，很明显splash.img就应该是开机第一屏，就拿它开刀了，上网搜索，真有修改开机第一屏的相关信息">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://blog.imcuiya.com/images/20180510/splashtool-test.jpg">
+<meta property="og:image" content="https://blog.imcuiya.com/images/20180510/splash1.jpg">
+<meta property="og:image" content="https://blog.imcuiya.com/images/20180510/splash1.jpg">
+<meta property="og:image" content="https://blog.imcuiya.com/images/20180510/splashbuildtools.jpg">
+<meta property="og:updated_time" content="2018-05-10T01:07:36.568Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="中兴Nubia手机开机第一屏DIY">
+<meta name="twitter:description" content="小试牛刀你想不想拥有一部高度个性化的手机呢？作者就是一个非常喜欢捣鼓的人，最近买了一部Nubia布拉格手机，外观挺漂亮，但是一开机，那开机动画快要把人眼睛都闪瞎了有木有？！还好没像格力那样搞个人脸上去，再一看，nubia的口号就是“个性，是一种生活方式！”，那开机动画是挺个性的。 一看刷机包，那结构，很明显splash.img就应该是开机第一屏，就拿它开刀了，上网搜索，真有修改开机第一屏的相关信息">
+<meta name="twitter:image" content="https://blog.imcuiya.com/images/20180510/splashtool-test.jpg">
+    
+        <link rel="alternate" type="application/atom+xml" title="多磨峡谷" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">DOMO</h5>
+          <a href="mailto:jlhdomo@gmail.com" title="jlhdomo@gmail.com" class="mail">jlhdomo@gmail.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                文章
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">中兴Nubia手机开机第一屏DIY</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">中兴Nubia手机开机第一屏DIY</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2018-05-10T00:39:11.000Z" itemprop="datePublished" class="page-time">
+  2018年05月10日
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/手机/">手机</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>目录</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#小试牛刀"><span class="post-toc-number">1.</span> <span class="post-toc-text">小试牛刀</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#开机第一屏第一版"><span class="post-toc-number">2.</span> <span class="post-toc-text">开机第一屏第一版</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#开机第一屏改进版"><span class="post-toc-number">3.</span> <span class="post-toc-text">开机第一屏改进版</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#下载地址"><span class="post-toc-number">4.</span> <span class="post-toc-text">下载地址</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-Nubia手机开机第一屏DIY"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">中兴Nubia手机开机第一屏DIY</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018年05月10日 08:39:11" datetime="2018-05-10T00:39:11.000Z"  itemprop="datePublished">2018年05月10日</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/手机/">手机</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="小试牛刀"><a href="#小试牛刀" class="headerlink" title="小试牛刀"></a>小试牛刀</h2><p>你想不想拥有一部高度个性化的手机呢？作者就是一个非常喜欢捣鼓的人，最近买了一部Nubia布拉格手机，外观挺漂亮，但是一开机，那开机动画快要把人眼睛都闪瞎了有木有？！还好没像格力那样搞个人脸上去，再一看，nubia的口号就是“个性，是一种生活方式！”，那开机动画是挺个性的。</p>
+<p>一看刷机包，那结构，很明显splash.img就应该是开机第一屏，就拿它开刀了，上网搜索，真有修改开机第一屏的相关信息，说是用bmp图片素材，直接改后缀为img再通过fastboot模式刷入就可以，我自对用UE大概对比了下文件结构，发现bmp文件结构跟splash.img明显不一样，难道真的可以？但是真的很想把开机第一屏改了，但是没刷过，又有点害怕，因为手机买来才没几天呢，万一刷了变砖，这种情况是不会保修的，而且改开机第一屏搞不好连刷机模式都进不去那就惨了。</p>
+<p>但是禁不住好奇心的驱使，发现splash.img的前8个字节是SPLASH!!，后面紧接着是38 04 00 00 80 07 00 00，就是0x00000438，0x00000780，换算成10进制就是1080，1920，很明显这就是分辨率，后面的摸不清楚，直接把bmp的前面16字节改掉就刷进去了，其实心里也是打鼓的，估计成功的概率不到10%，果然，开机没有出现想要的画面，但也没有开不了机，开机显示一个很小的企鹅图标，这是Linux内核预留的标志，估计读取第一屏数据失败就自动用这个了，这一办法宣告失败。</p>
+<p>网上的方法大概对以前的老版本凑效，但是在版本更新以后就不行了，于是继续折腾，splash.img前16字节的意义很明显了，就是splash标志+分辨率。再看splash的束位置为5eedff,于是开始盘算，大胆假设splash仍然采用bmp图像数据，但是有几项标志是默认的，所以直接取消，不在文件中体现，于是1920×1080的24位真彩色图像就需要1920×1080×3字节数据，猜测使用了前段结构+某种算法标识+数据，于是将官方刷机包中的splash.img用UE将某段数据以二进制方式替换成00，再刷入手机，正常启动，但是能看见图像缺失了一条横线，很明显就是被替换掉的，数据是连续的！</p>
+<p>经过一系列摸索，决定以“splash前段+偏移+bmp数据”的组合进行尝试，从官方的splash.img来看，偏移段全部为0，因此以官方splash文件为模板，直接将bmp数据以字节对齐的方式替换后面的数据，刷入，提示输入成功，重启，自己想要的开机画面终于来了，但是图像是倒着的，嘿嘿！！！难不倒我，网上据说nubia系统读取的是bmp原始矩阵数据，而bmp图像的排列是行内从左到右,行之间是从下到上，所以需要将其垂直翻转，用PS垂直翻转，再将数据导入，合成文件输入，哈哈，这次真的完美了！</p>
+<h2 id="开机第一屏第一版"><a href="#开机第一屏第一版" class="headerlink" title="开机第一屏第一版"></a>开机第一屏第一版</h2><p>下一步就是做一个简单程序自动化完成这些动作！</p>
+<p>数据结构大底摸清了以后，用C语言写了一个简单的工具，命令行使用，经测试没问题！</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/images/20180510/splashtool-test.jpg" alt="开机第一屏制作工具第一版" title="开机第一屏制作工具第一版">
+                </div>
+                <div class="image-caption">开机第一屏制作工具第一版</div>
+            </figure>
+<p>下面是我生成的两张开机第一屏：</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/images/20180510/splash1.jpg" alt="第一次生成的开机第一屏" title="第一张开机第一屏">
+                </div>
+                <div class="image-caption">第一张开机第一屏</div>
+            </figure>
+<p>第一张是在有点丑，于是做了第二张。</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/images/20180510/splash1.jpg" alt="第二次生成的开机第一屏" title="第二张开机第一屏">
+                </div>
+                <div class="image-caption">第二张开机第一屏</div>
+            </figure>
+<h2 id="开机第一屏改进版"><a href="#开机第一屏改进版" class="headerlink" title="开机第一屏改进版"></a>开机第一屏改进版</h2><p>第一版工具经人反应存在偏移问题，后经过修改出了第二版，有人不会用命令行工具，于是又简单搞了个GUI界面，就是下面的，为了故弄玄虚，搞了些乱七八糟的提示信息！</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/images/20180510/splashbuildtools.jpg" alt="开机第一屏制作工具第二版" title="开机第一屏制作工具第二版">
+                </div>
+                <div class="image-caption">开机第一屏制作工具第二版</div>
+            </figure>
+<p>最新版Nubia系列手机开机第一屏制作工具，Win10 VS2015编译，兼容XP/7/8/8.1/10。</p>
+<p><strong> 素材要求：</strong></p>
+<ul>
+<li>24位bmp图像垂直翻转</li>
+<li>分辨率1920×1080。</li>
+</ul>
+<p>可用本工具生成开机第一屏文件splash-new.img，可在fastboot模式单独刷入，不影响当前使用系统，仅更改开机第一屏。</p>
+<p><strong>刷入命令：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fastboot -i 0x19d2 flash splash spalsh-new.img</span><br></pre></td></tr></table></figure>
+<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p><strong> 链接: <a href="http://pan.baidu.com/s/1nvnKVhf" target="_blank" rel="noopener">http://pan.baidu.com/s/1nvnKVhf</a> 密码: m4ey </strong></p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2018-05-10T01:07:36.568Z" itemprop="dateUpdated">2018年05月10日 09:07:36</time>
+</span><br>
+
+
+        
+        原始链接：<a href="/2018/05/10/Nubia手机开机第一屏DIY/" target="_blank" rel="external">https://blog.imcuiya.com/2018/05/10/Nubia手机开机第一屏DIY/</a>
+        
+    </div>
+    
+    <footer>
+        <a href="https://blog.imcuiya.com">
+            <img src="/img/avatar.jpg" alt="DOMO">
+            DOMO
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Nubia开机第一屏/">Nubia开机第一屏</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开机第一屏破解/">开机第一屏破解</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/玩机/">玩机</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://blog.imcuiya.com/2018/05/10/Nubia手机开机第一屏DIY/&title=《中兴Nubia手机开机第一屏DIY》 — 多磨峡谷&pic=https://blog.imcuiya.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://blog.imcuiya.com/2018/05/10/Nubia手机开机第一屏DIY/&title=《中兴Nubia手机开机第一屏DIY》 — 多磨峡谷&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.imcuiya.com/2018/05/10/Nubia手机开机第一屏DIY/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《中兴Nubia手机开机第一屏DIY》 — 多磨峡谷&url=https://blog.imcuiya.com/2018/05/10/Nubia手机开机第一屏DIY/&via=https://blog.imcuiya.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://blog.imcuiya.com/2018/05/10/Nubia手机开机第一屏DIY/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2018/05/09/hello-world/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">多磨博客迁移到github</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>DOMO &copy; 2016 - 2018</span>
+            <span>
+                
+                <a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备16888888号-1</a>
+				
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://blog.imcuiya.com/2018/05/10/Nubia手机开机第一屏DIY/&title=《中兴Nubia手机开机第一屏DIY》 — 多磨峡谷&pic=https://blog.imcuiya.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://blog.imcuiya.com/2018/05/10/Nubia手机开机第一屏DIY/&title=《中兴Nubia手机开机第一屏DIY》 — 多磨峡谷&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.imcuiya.com/2018/05/10/Nubia手机开机第一屏DIY/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《中兴Nubia手机开机第一屏DIY》 — 多磨峡谷&url=https://blog.imcuiya.com/2018/05/10/Nubia手机开机第一屏DIY/&via=https://blog.imcuiya.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://blog.imcuiya.com/2018/05/10/Nubia手机开机第一屏DIY/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACtUlEQVR42u3aMXLkMAwEQP//074qp1e7mgEJe4NWpFpLFJsBAQP8+oqv75/r1S//379/Pv8l/+vRhYeHhzea+qsrHzoZZ8Z4NZ/kW3h4eHh7vPefSajvMcloOTuZMx4eHt4n8PINOgket5J4PDw8vE/mvae2T86WEg8PD+9zeEkxIinXJkWKpOiQz+darQUPDw8v5rUNsE+4X+zv4eHh4R20rGYb9EmQSNLoYoZ4eHh4C7w2OU6eP09821T+YeZ4eHh4V3n5Aal80JPNPU+doyXGw8PDW+MlzbBZy6qdYh5IkvYbHh4e3gYvLxC0RdV8cz+fw8Oy4uHh4a3xkt9nrfpZoyvZ9KN0HA8PD+8qry0Z3AoAs3BSF03w8PDwFnizNlW7uScF31lTLVomPDw8vGXerFSaN/tPGHnRGQ8PD2+bl08iKbYmE2on2i4WHh4e3h6v3aBnR6/OD1rNEnQ8PDy83+e1yFn7/yRZj/5XwMPDw7vKS15rU+c2jc5LIW1ZGQ8PD2+bN9um26DSfjc/mvBwdAAPDw/vEi9PUmdlhXzktkwcfREPDw9vjZcn1u0W376bPxPd4+Hh4a3xNg4KvL9P2v+zJPtl3MPDw8Nb4M3KDW1JIikrzMLGQ2DAw8PDu8SbhYe7B6RuhaiXS4CHh4e3wMvb/21DawY4L0zUWTkeHh5eyTtpgOXbdx5sZu2u+mQEHh4e3iVeUjLIrxkgP9ZQTAIPDw/vEu+7vPKN/qQlNjuShYeHh/c7vFnwSMqys4BxslhHYDw8PLySNwsGCa8d+SQwPBQj8PDw8BZ4s5ZYEgzy1tp5zaGIaXh4eHh/yku26fwYVn4oIVosPDw8vD/ltR+eFWHzxDpZGjw8PLw9Xn4QKnk3aXQl2307ct3lw8PDwxvxNg5mzYLKrfQdDw8Pb433D4EFAydLqnkWAAAAAElFTkSuQmCC" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+</body>
+</html>
