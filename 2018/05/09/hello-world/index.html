@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>多磨博客迁移到github | 多磨峡谷 | 沧海横流，经天纬地英雄业；风云际会，壮曲悲歌志士情！</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="hexo配置,github建站">
+    <meta name="description" content="经过搜索对比，最终选择了github gh-pages存放文档，现在github在国内的连接速度已经可以了。 首先来说配置过程中遇到的几个坑 坑1：hexo配置文件的编写注意事项有时候更新了配置文件以后，莫名其妙的出现错误，给你标个：出来，你改了又改，还是一样。这里有些注意事项：  所有的配置项目冒号:后面有参数的都要有一个空格； 类似git、repository这样的二级项目前面必须有缩进，某些">
+<meta name="keywords" content="hexo配置,github建站">
+<meta property="og:type" content="article">
+<meta property="og:title" content="多磨博客迁移到github">
+<meta property="og:url" content="https://blog.imcuiya.com/2018/05/09/hello-world/index.html">
+<meta property="og:site_name" content="多磨峡谷">
+<meta property="og:description" content="经过搜索对比，最终选择了github gh-pages存放文档，现在github在国内的连接速度已经可以了。 首先来说配置过程中遇到的几个坑 坑1：hexo配置文件的编写注意事项有时候更新了配置文件以后，莫名其妙的出现错误，给你标个：出来，你改了又改，还是一样。这里有些注意事项：  所有的配置项目冒号:后面有参数的都要有一个空格； 类似git、repository这样的二级项目前面必须有缩进，某些">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-05-10T00:24:19.852Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="多磨博客迁移到github">
+<meta name="twitter:description" content="经过搜索对比，最终选择了github gh-pages存放文档，现在github在国内的连接速度已经可以了。 首先来说配置过程中遇到的几个坑 坑1：hexo配置文件的编写注意事项有时候更新了配置文件以后，莫名其妙的出现错误，给你标个：出来，你改了又改，还是一样。这里有些注意事项：  所有的配置项目冒号:后面有参数的都要有一个空格； 类似git、repository这样的二级项目前面必须有缩进，某些">
+    
+        <link rel="alternate" type="application/atom+xml" title="多磨峡谷" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">DOMO</h5>
+          <a href="mailto:jlhdomo@gmail.com" title="jlhdomo@gmail.com" class="mail">jlhdomo@gmail.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                文章
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">多磨博客迁移到github</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">多磨博客迁移到github</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2018-05-09T14:31:31.000Z" itemprop="datePublished" class="page-time">
+  2018年05月09日
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/笔记/">笔记</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>目录</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#坑1：hexo配置文件的编写注意事项"><span class="post-toc-number">1.</span> <span class="post-toc-text">坑1：hexo配置文件的编写注意事项</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#坑3：配置自动发布"><span class="post-toc-number">2.</span> <span class="post-toc-text">坑3：配置自动发布</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#坑4：绑定域名"><span class="post-toc-number">3.</span> <span class="post-toc-text">坑4：绑定域名</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#坑5：README-md"><span class="post-toc-number">4.</span> <span class="post-toc-text">坑5：README.md</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-hello-world"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">多磨博客迁移到github</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018年05月09日 22:31:31" datetime="2018-05-09T14:31:31.000Z"  itemprop="datePublished">2018年05月09日</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/笔记/">笔记</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p>经过搜索对比，最终选择了github gh-pages存放文档，现在github在国内的连接速度已经可以了。</p>
+<p><strong>首先来说配置过程中遇到的几个坑</strong></p>
+<h2 id="坑1：hexo配置文件的编写注意事项"><a href="#坑1：hexo配置文件的编写注意事项" class="headerlink" title="坑1：hexo配置文件的编写注意事项"></a>坑1：hexo配置文件的编写注意事项</h2><p>有时候更新了配置文件以后，莫名其妙的出现错误，给你标个：出来，你改了又改，还是一样。这里有些注意事项：</p>
+<ul>
+<li>所有的配置项目冒号:后面有参数的都要有一个空格；</li>
+<li>类似git、repository这样的二级项目前面必须有缩进，某些编辑器你在上一行的尾部敲回车的时候，第二行会和上一行对齐，看起来有缩进的样子，但是会报错，你必须手动增加缩进，我在这里就被搞了！</li>
+</ul>
+<p>##坑2：提示下面错误</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ERROR Deployer not found : github</span><br><span class="line">_config.yml是配置文件，hexo在2点几的版本中type: github。之后的版本是type: git</span><br></pre></td></tr></table></figure>
+<p>解决：安装如下功能包</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<h2 id="坑3：配置自动发布"><a href="#坑3：配置自动发布" class="headerlink" title="坑3：配置自动发布"></a>坑3：配置自动发布</h2><p>网上有一大堆配置的文章，但是hexo和github的版本都在变，你按照人家的解决办法搞了半天也是白搭。最新版的hexo已经支持直接提交到你的项目地址了，如下面这样：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https://github.com/PiterFan/domo.git</span><br><span class="line">  branch: gh-pages</span><br></pre></td></tr></table></figure>
+<h2 id="坑4：绑定域名"><a href="#坑4：绑定域名" class="headerlink" title="坑4：绑定域名"></a>坑4：绑定域名</h2><p>现在github上已经支持直接设置域名，设置好后会自动在你的项目下面生成一个配置文件，如你设置的是别名解析，则会生成CNAME文件，查看内容，就是你的域名。把这个文件直接copy到你的source文件夹利就可以了，以后生成的时候这个文件会自动复制到你的public目录。</p>
+<h2 id="坑5：README-md"><a href="#坑5：README-md" class="headerlink" title="坑5：README.md"></a>坑5：README.md</h2><p>这个解决办法简单，把readme.md复制到source文件夹，然后在_config.yml里面找到# Directory，修改一下skip_render项即可，这样就不会将readme.md转换成html文档了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># Directory</span><br><span class="line">source_dir: source</span><br><span class="line">public_dir: public</span><br><span class="line">tag_dir: tags</span><br><span class="line">archive_dir: archives</span><br><span class="line">category_dir: categories</span><br><span class="line">code_dir: downloads/code</span><br><span class="line">i18n_dir: :lang</span><br><span class="line">skip_render:</span><br></pre></td></tr></table></figure>
+<p>看见了没？skip_render一项为空，添加上README.md就可以了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># Directory</span><br><span class="line">source_dir: source</span><br><span class="line">public_dir: public</span><br><span class="line">tag_dir: tags</span><br><span class="line">archive_dir: archives</span><br><span class="line">category_dir: categories</span><br><span class="line">code_dir: downloads/code</span><br><span class="line">i18n_dir: :lang</span><br><span class="line">skip_render: README.md</span><br></pre></td></tr></table></figure>
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2018-05-10T00:24:19.852Z" itemprop="dateUpdated">2018年05月10日 08:24:19</time>
+</span><br>
+
+
+        
+        原始链接：<a href="/2018/05/09/hello-world/" target="_blank" rel="external">https://blog.imcuiya.com/2018/05/09/hello-world/</a>
+        
+    </div>
+    
+    <footer>
+        <a href="https://blog.imcuiya.com">
+            <img src="/img/avatar.jpg" alt="DOMO">
+            DOMO
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github建站/">github建站</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo配置/">hexo配置</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://blog.imcuiya.com/2018/05/09/hello-world/&title=《多磨博客迁移到github》 — 多磨峡谷&pic=https://blog.imcuiya.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://blog.imcuiya.com/2018/05/09/hello-world/&title=《多磨博客迁移到github》 — 多磨峡谷&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.imcuiya.com/2018/05/09/hello-world/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《多磨博客迁移到github》 — 多磨峡谷&url=https://blog.imcuiya.com/2018/05/09/hello-world/&via=https://blog.imcuiya.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://blog.imcuiya.com/2018/05/09/hello-world/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>DOMO &copy; 2016 - 2018</span>
+            <span>
+                
+                <a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备16888888号-1</a>
+				
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://blog.imcuiya.com/2018/05/09/hello-world/&title=《多磨博客迁移到github》 — 多磨峡谷&pic=https://blog.imcuiya.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://blog.imcuiya.com/2018/05/09/hello-world/&title=《多磨博客迁移到github》 — 多磨峡谷&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.imcuiya.com/2018/05/09/hello-world/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《多磨博客迁移到github》 — 多磨峡谷&url=https://blog.imcuiya.com/2018/05/09/hello-world/&via=https://blog.imcuiya.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://blog.imcuiya.com/2018/05/09/hello-world/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACF0lEQVR42u3aSW7DMBAEQP//08oDDNndQzuAyeIpQBSKpcOEszwe8bqe1vNvkyfvdn7+28c3FgYGxs8yrpfr7gV3P+e81+/Kz4aBgXEOIznE6+fbJ5OAm5wNAwMD4+6ZNhy/3gEDAwPje4wZb3YBxcDAwMgTy1lZLd/n67k4BgbGDzLa1//nz1/pb2BgYPwU4yrX7JqYh8trtDAwMPZmtOX7GTK5AiZJ9ZsPh4GBcQAjGe3KX5+MkbUNg0crw8DA2JrRbpcfK9khT57fBFwMDIwtGLPi10rzIB/LKBoAGBgYWzPa8lmbmraXznYEBAMDAyNHzgpkK2wMDIxzGG2onQXW2acp0mMMDIxjGG25vw3ZeVCuPxwGBsYBjPaql5fMctisCVHX/zAwMH6Q8dk2wErB7gPNVAwMjK0ZedI4K6i16fEKGAMDY1dGkii2bYBZU6H9iBgYGCcwZm3I2TVuRkrOgIGBsTejbR/OqCvXx2QEFgMD4xzGUnkrTm7zI7bBFwMD42RGXiDLQ3Y7/lWU2zAwMA5grAyKrV8c28CNgYFxAuMqV3L0PPVt2wNF3xUDA2MjxmcT0dn4RcvLhzMwMDB2YqwUvGYF/Xy3YowMAwPjAMZKMzIfp1j/DxDl4hgYGBijVHNGLZqpGBgYGAsls5W2aNGKwMDAOIAxawZ8qsLXhlcMDIzTGHnquP76JBy3bQkMDIytGX8VTQPxkM2rkAAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+</body>
+</html>

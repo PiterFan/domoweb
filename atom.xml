@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>多磨峡谷</title>
+  
+  <subtitle>沧海横流，经天纬地英雄业；风云际会，壮曲悲歌志士情！</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://blog.imcuiya.com/"/>
+  <updated>2018-05-10T00:24:19.852Z</updated>
+  <id>https://blog.imcuiya.com/</id>
+  
+  <author>
+    <name>DOMO</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>多磨博客迁移到github</title>
+    <link href="https://blog.imcuiya.com/2018/05/09/hello-world/"/>
+    <id>https://blog.imcuiya.com/2018/05/09/hello-world/</id>
+    <published>2018-05-09T14:31:31.000Z</published>
+    <updated>2018-05-10T00:24:19.852Z</updated>
+    
+    <content type="html"><![CDATA[<p>经过搜索对比，最终选择了github gh-pages存放文档，现在github在国内的连接速度已经可以了。</p><p><strong>首先来说配置过程中遇到的几个坑</strong></p><h2 id="坑1：hexo配置文件的编写注意事项"><a href="#坑1：hexo配置文件的编写注意事项" class="headerlink" title="坑1：hexo配置文件的编写注意事项"></a>坑1：hexo配置文件的编写注意事项</h2><p>有时候更新了配置文件以后，莫名其妙的出现错误，给你标个：出来，你改了又改，还是一样。这里有些注意事项：</p><ul><li>所有的配置项目冒号:后面有参数的都要有一个空格；</li><li>类似git、repository这样的二级项目前面必须有缩进，某些编辑器你在上一行的尾部敲回车的时候，第二行会和上一行对齐，看起来有缩进的样子，但是会报错，你必须手动增加缩进，我在这里就被搞了！</li></ul><p>##坑2：提示下面错误</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ERROR Deployer not found : github</span><br><span class="line">_config.yml是配置文件，hexo在2点几的版本中type: github。之后的版本是type: git</span><br></pre></td></tr></table></figure><p>解决：安装如下功能包</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><h2 id="坑3：配置自动发布"><a href="#坑3：配置自动发布" class="headerlink" title="坑3：配置自动发布"></a>坑3：配置自动发布</h2><p>网上有一大堆配置的文章，但是hexo和github的版本都在变，你按照人家的解决办法搞了半天也是白搭。最新版的hexo已经支持直接提交到你的项目地址了，如下面这样：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https://github.com/PiterFan/domo.git</span><br><span class="line">  branch: gh-pages</span><br></pre></td></tr></table></figure><h2 id="坑4：绑定域名"><a href="#坑4：绑定域名" class="headerlink" title="坑4：绑定域名"></a>坑4：绑定域名</h2><p>现在github上已经支持直接设置域名，设置好后会自动在你的项目下面生成一个配置文件，如你设置的是别名解析，则会生成CNAME文件，查看内容，就是你的域名。把这个文件直接copy到你的source文件夹利就可以了，以后生成的时候这个文件会自动复制到你的public目录。</p><h2 id="坑5：README-md"><a href="#坑5：README-md" class="headerlink" title="坑5：README.md"></a>坑5：README.md</h2><p>这个解决办法简单，把readme.md复制到source文件夹，然后在_config.yml里面找到# Directory，修改一下skip_render项即可，这样就不会将readme.md转换成html文档了。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># Directory</span><br><span class="line">source_dir: source</span><br><span class="line">public_dir: public</span><br><span class="line">tag_dir: tags</span><br><span class="line">archive_dir: archives</span><br><span class="line">category_dir: categories</span><br><span class="line">code_dir: downloads/code</span><br><span class="line">i18n_dir: :lang</span><br><span class="line">skip_render:</span><br></pre></td></tr></table></figure><p>看见了没？skip_render一项为空，添加上README.md就可以了。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># Directory</span><br><span class="line">source_dir: source</span><br><span class="line">public_dir: public</span><br><span class="line">tag_dir: tags</span><br><span class="line">archive_dir: archives</span><br><span class="line">category_dir: categories</span><br><span class="line">code_dir: downloads/code</span><br><span class="line">i18n_dir: :lang</span><br><span class="line">skip_render: README.md</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;经过搜索对比，最终选择了github gh-pages存放文档，现在github在国内的连接速度已经可以了。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;首先来说配置过程中遇到的几个坑&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;坑1：hexo配置文件的编写注意事项&quot;&gt;&lt;a href=&quot;#
+      
+    
+    </summary>
+    
+      <category term="笔记" scheme="https://blog.imcuiya.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="hexo配置" scheme="https://blog.imcuiya.com/tags/hexo%E9%85%8D%E7%BD%AE/"/>
+    
+      <category term="github建站" scheme="https://blog.imcuiya.com/tags/github%E5%BB%BA%E7%AB%99/"/>
+    
+  </entry>
+  
+</feed>
