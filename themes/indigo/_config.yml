@@ -12,7 +12,7 @@ menu:
     text: 主页
     url: /
   archives:
-    text: 文章
+    text: 归档
     url: /archives
   tags:
     text: 标签
@@ -28,7 +28,7 @@ avatar_link: /
 # 头像背景图
 brand: /img/brand.jpg
 # favicon
-favicon: /favicon.ico
+favicon: /domo.ico
 
 # email
 email: jlhdomo@gmail.com
@@ -38,8 +38,8 @@ color: '#3F51B5'
 
 # 页面标题
 tags_title: 标签
-archives_title: 文章
-categories_title: 分类归档
+archives_title: 归档
+categories_title: 分类
 
 # 文章截断
 excerpt_render: false
@@ -137,7 +137,7 @@ canonical: false
 since_year: 2016
 
 # 用户页面中作者相关的描述性文字，如不需要设为 false
-about: 用户页面中作者相关的描述性文字，如不需要设为 false
+about: 个人博客, 有些文章内容转载于网络, 如果发现有侵犯到你的权益, 请Email及时通知我。
 
 # “不蒜子”访问量统计，详见 http://ibruce.info/2015/04/04/busuanzi/
 visit_counter:
