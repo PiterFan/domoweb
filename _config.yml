@@ -5,16 +5,16 @@
 # Site
 title: 多磨峡谷
 subtitle: 沧海横流，经天纬地英雄业；风云际会，壮曲悲歌志士情！
-description: 
-keywords:
+description: 多磨峡谷,摄影,玩机,编程,手机ROM DIY,手机root,hexo,hexo theme,hexo-theme-indigo
+keywords: 多磨峡谷,摄影,玩机,编程,手机ROM DIY,手机root,hexo,hexo theme,hexo-theme-indigo
 author: DOMO
 language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://piterfan.github.io/domoweb/
-root: /domoweb/
+url: https://blog.imcuiya.com
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -35,7 +35,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
