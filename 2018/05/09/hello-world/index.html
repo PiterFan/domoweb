@@ -250,7 +250,7 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://blog.imcuiya.com/2018/05/09/hello-world/&title=《多磨博客迁移到github》 — 多磨峡谷&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://blog.imcuiya.com/2018/05/09/hello-world/&title=《多磨博客迁移到github》 — 多磨峡谷&source=多磨峡谷,摄影,玩机,编程,手机ROM DIY,手机root,hexo,hexo theme,hexo-theme-indigo" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -311,6 +311,30 @@
 
 
 
+
+    <!-- Valine Comments -->
+    <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'false' == 'true',
+            verify: 'false' == 'true',
+            appId: "g3KfhvFHl03wpDjtFnJiyYoB-gzGzoHsz",
+            appKey: "1MDKXAklOdxCwN0qmptMLp0M",
+            avatar: "mm",
+            placeholder: "要不要说点什么？",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "10"
+        })
+    </script>
+    <!-- Valine Comments end -->
 
 
 
@@ -400,7 +424,7 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://blog.imcuiya.com/2018/05/09/hello-world/&title=《多磨博客迁移到github》 — 多磨峡谷&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://blog.imcuiya.com/2018/05/09/hello-world/&title=《多磨博客迁移到github》 — 多磨峡谷&source=多磨峡谷,摄影,玩机,编程,手机ROM DIY,手机root,hexo,hexo theme,hexo-theme-indigo" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
