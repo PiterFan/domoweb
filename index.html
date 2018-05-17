@@ -35,7 +35,7 @@
     
         <link rel="alternate" type="application/atom+xml" title="多磨峡谷" href="/atom.xml">
     
-    <link rel="shortcut icon" href="/img/domo.png">	
+    <link rel="shortcut icon" href="/domo.ico">
     <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
     <script>window.lazyScripts=[]</script>
 
@@ -76,7 +76,7 @@
             <li class="waves-block waves-effect">
               <a href="/archives"  >
                 <i class="icon icon-lg icon-archives"></i>
-                文章
+                归档
               </a>
             </li>
         
@@ -99,8 +99,9 @@
   </div>
 </aside>
 
-    <main id="main">
-        <header class="top-header" id="header">
+	<div id="barba-wrapper">
+		<main id="main" class="barba-container">
+			<header class="top-header" id="header">
     <div class="flex-row">
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
@@ -145,6 +146,55 @@
     <ul class="post-list">
     
         <li class="post-list-item fade">
+            <article id="post-网址收藏"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2018年05月17日 14:33:43" datetime="2018-05-17T06:33:43.000Z"  itemprop="datePublished">2018年05月17日</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/网址推荐/">网址推荐</a></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2018/05/17/网址收藏/">网址收藏</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        inputmask地址：https://github.com/RobinHerbots/jquery.inputmask说明：对input标签输入电话，数字，手机号等限制挺方便的
+阿里巴巴矢量图标库图标库,各种各样的图标可供下载http://www.iconfont.cn/
+变量名网站还在使用拼音来写变量名嘛?还在为怎么去变量名字而烦恼吗?快来试试这个:http://unbug.github...
+    
+
+        <a href="/2018/05/17/网址收藏/" class="post-more waves-effect waves-button">
+            阅读全文…
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/网址/">网址</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/软件/">软件</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
             <article id="post-Nubia手机开机第一屏DIY"
   class="article-card article-type-post" itemprop="blogPost">
 
@@ -160,11 +210,14 @@
 
     
 
+
   
     <h3 class="post-title" itemprop="name">
       <a class="post-title-link" href="/2018/05/10/Nubia手机开机第一屏DIY/">中兴Nubia手机开机第一屏DIY</a>
     </h3>
   
+
+
 
 
     <div class="post-content" id="post-content" itemprop="postContent">
@@ -205,11 +258,14 @@
 
     
 
+
   
     <h3 class="post-title" itemprop="name">
       <a class="post-title-link" href="/2018/05/09/hello-world/">多磨博客迁移到github</a>
     </h3>
   
+
+
 
 
     <div class="post-content" id="post-content" itemprop="postContent">
@@ -244,7 +300,7 @@
 
 </div>
 
-        <footer class="footer">
+			<footer class="footer">
     <div class="top">
         
 <p>
@@ -275,7 +331,8 @@
     </div>
 </footer>
 
-    </main>
+		</main>
+	</div>
     <div class="mask" id="mask"></div>
 <a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
 
@@ -334,6 +391,7 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 </script>
 
 <script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/barba.min.min.js"></script>
 
 
 <div class="search-panel" id="search-panel">
@@ -365,6 +423,10 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 
 
 
-
+<script type="text/javascript">
+window.onload = function(){ 
+	Barba.Pjax.start();
+}
+</script>
 </body>
 </html>
