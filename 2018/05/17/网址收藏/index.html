@@ -101,8 +101,8 @@
 </aside>
 
 		<main id="main">
-			<domoajax id="barba-wrapper">
-				<main class="barba-container">
+			<div id="barba-wrapper">
+				<div class="barba-container">
 					<header class="top-header" id="header">
     <div class="flex-row">
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
@@ -370,7 +370,9 @@
 
 </div>
 
-					<footer class="footer">
+				</div>
+			</div>		
+			<footer class="footer">
     <div class="top">
         
 <p>
@@ -401,8 +403,6 @@
     </div>
 </footer>
 
-				</main>
-			</domoajax>
 		</main>
     <div class="mask" id="mask"></div>
 <a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
@@ -495,8 +495,17 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
 
 
 <script type="text/javascript">
-window.onload = function(){ 
+$(document).onload = function(){ 
 	Barba.Pjax.start();
+}
+$(document).on('pjax:complete', function() { // 加载多说
+    pajx_loadResource()
+});
+function pajx_loadResource()
+{
+	require(['//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js']);
+	require(['//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js']);
+	require(['//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js']);	
 }
 </script>
 </body>
