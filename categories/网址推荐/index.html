@@ -100,8 +100,6 @@
 </aside>
 
 		<main id="main">
-			<div id="barba-wrapper">
-				<div class="barba-container">
 					<header class="top-header" id="header">
     <div class="flex-row">
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
@@ -142,15 +140,19 @@
             ">全部</a>
         
 
-            <a href="/categories/手机/" style="-webkit-order:2;order:2" class="tags-list-item waves-effect waves-button waves-light">手机</a>
-
-        
-
-            <a href="/categories/笔记/" style="-webkit-order:0;order:0" class="tags-list-item waves-effect waves-button waves-light">笔记</a>
+            <a href="/categories/手机/" style="-webkit-order:0;order:0" class="tags-list-item waves-effect waves-button waves-light">手机</a>
 
         
 
             <a href="/categories/网址推荐/" style="-webkit-order:1;order:1" class="tags-list-item waves-effect waves-button waves-light active">网址推荐</a>
+
+        
+
+            <a href="/categories/笔记/" style="-webkit-order:2;order:2" class="tags-list-item waves-effect waves-button waves-light">笔记</a>
+
+        
+
+            <a href="/categories/网络文摘/" style="-webkit-order:3;order:3" class="tags-list-item waves-effect waves-button waves-light">网络文摘</a>
 
         
     </nav>
@@ -208,9 +210,7 @@
 </div>
 
 
-				</div>
-			</div>		
-			<footer class="footer">
+					<footer class="footer">
     <div class="top">
         
 <p>
@@ -299,8 +299,7 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 
 </script>
 
-<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
-<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/barba.min.min.js"></script>
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.min.js"></script>
 
 
 <div class="search-panel" id="search-panel">
@@ -320,7 +319,7 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 </li>
 </template>
 
-<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.min.js" async></script>
 
 
 
@@ -332,19 +331,7 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 
 
 
-<script type="text/javascript">
-$(document).onload = function(){ 
-	Barba.Pjax.start();
-}
-$(document).on('pjax:complete', function() { // 加载多说
-    pajx_loadResource()
-});
-function pajx_loadResource()
-{
-	require(['//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js']);
-	require(['//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js']);
-	require(['//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js']);	
-}
-</script>
+
+
 </body>
 </html>
